@@ -9,8 +9,8 @@ express.on('/', function(req, res) {
   res.send('<h1>Winter is coming</h1>')
 })
 
-express.listen(app.get('port'), function() {
-  console.log('Node app is running on port', app.get('port'))
+express.listen(express.get('port'), function() {
+  console.log('Node app is running on port', express.get('port'))
 })
 
 //  Slackbot
