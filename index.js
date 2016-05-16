@@ -12,6 +12,11 @@ bot.on('start', function() {
   }
 
   bot.postMessage('#sandpit', 'Winter is coming...', params)
+
+  bot.on('message', function(data) {
+      // all ingoing events https://api.slack.com/rtm
+      console.log(data);
+  })
 })
 
 bot.on('message', function(data) {
