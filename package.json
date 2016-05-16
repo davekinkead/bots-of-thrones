@@ -1,0 +1,25 @@
+{
+  "name": "bot-of-thrones",
+  "version": "0.0.1",
+  "description": "Winter is coming...",
+  "main": "index.js",
+  "scripts": {
+    "test": "tap"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/davekinkead/bot-of-thrones.git"
+  },
+  "keywords": [
+    "Game of Thrones",
+    "GoT",
+    "Ygritte",
+    "Slackbot"
+  ],
+  "author": "Dave Kinkead",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/davekinkead/bot-of-thrones/issues"
+  },
+  "homepage": "https://github.com/davekinkead/bot-of-thrones#readme"
+}
