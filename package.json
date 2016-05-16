@@ -23,6 +23,7 @@
   },
   "homepage": "https://github.com/davekinkead/bot-of-thrones#readme",
   "dependencies": {
+    "express": "^4.13.4",
     "slackbots": "^0.5.1"
   }
 }
