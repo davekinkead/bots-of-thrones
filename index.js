@@ -11,7 +11,7 @@ bot.on('start', function() {
     icon_url: 'https://raw.githubusercontent.com/davekinkead/davekinkead.github.io/master/media/ygritte.jpg'
   }
 
-  bot.postMessage('#exiled', 'Winter is coming...', params)
+  bot.postMessage('#sandpit', 'Winter is coming...', params)
 })
 
 bot.on('message', function(data) {
