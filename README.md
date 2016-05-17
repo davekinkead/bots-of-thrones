@@ -24,4 +24,7 @@ Writing a bot is easy - use the other bots (in `lib/bots`) as examples.
 
 ## Tests
 
-When you play the game of thrones, you win or you throw an exception.  Yeah, I should probably add some eh? 
+When you play the game of thrones, you win or you throw an exception.  Yeah, I should probably add some eh?
+
+Copyright (C) 2016 Dave Kinkead
+Released under MIT

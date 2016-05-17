@@ -22,7 +22,7 @@ bot.on('message', function(data) {
   if (data.type === 'message' && data.subtype !== 'bot_message') {
     var character = bots.doYouHaveSomethingToSay(data)
     if (character) {
-      bot.postMessage('#sandpit', character.quip, character.params)
+      bot.postMessage('#general', character.quip, character.params)
     }
   }
 })
