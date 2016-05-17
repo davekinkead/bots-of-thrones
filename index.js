@@ -11,7 +11,7 @@ var bot = new Slackbot({
 
 bot.on('start', function() {
 
-  bot.postMessage('#sandpit', 'Winter is coming...', bots.Ygritte.params)
+  bot.postMessage('#sandpit', 'Winter is coming...', bots.characters.Ygritte.params)
     .fail(function(data) {
       console.log('Failed to connect somehow...')
       console.log(data)
@@ -21,7 +21,9 @@ bot.on('start', function() {
 bot.on('message', function(data) {
   if (data.type === 'message' && data.subtype !== 'bot_message') {
     var character = bots.doYouHaveSomethingToSay(data)
-    if (character) bot.postMessage('#sandpit', character.quip, character.params)
+    if (character) {
+      bot.postMessage('#sandpit', character.quip, character.params)
+    }
   }
 })
 
