@@ -11,7 +11,7 @@ var bot = new Slackbot({
 
 bot.on('start', function() {
 
-  bot.postMessage('#sandpit', 'Winter is coming...', bots.characters.Ygritte.params)
+  bot.postMessage('#sandpit', 'Winter is coming...', bots.characters.Eddard.params)
     .fail(function(data) {
       console.log('Failed to connect somehow...')
       console.log(data)
