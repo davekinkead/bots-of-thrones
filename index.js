@@ -1,21 +1,7 @@
 var Slackbot = require('slackbots')
 var express = require('express')()
 var http = require('http').Server(express)
-
-var Ygritte = {
-  params: {
-    as_user: false,
-    icon_url: 'https://raw.githubusercontent.com/davekinkead/davekinkead.github.io/master/media/ygritte.jpg'
-  }
-}
-
-var JohnSnow = {
-  params: {
-    as_user: false,
-    username: 'John Snow',
-    icon_url: 'https://avatars3.githubusercontent.com/u/611877?v=3&s=460'
-  }
-}
+var bots = require('./lib/bots')
 
 //  Slackbot
 var bot = new Slackbot({
@@ -25,7 +11,7 @@ var bot = new Slackbot({
 
 bot.on('start', function() {
 
-  bot.postMessage('#sandpit', 'Winter is coming...', Ygritte.params)
+  bot.postMessage('#sandpit', 'Winter is coming...', bots.Ygritte.params)
     .fail(function(data) {
       console.log('Failed to connect somehow...')
       console.log(data)
@@ -36,7 +22,8 @@ bot.on('message', function(data) {
   console.log(data);
 
   if (data.type === 'message' && data.subtype !== 'bot_message') {
-    bot.postMessage('#sandpit', 'You said..' + data.text, JohnSnow.params)
+    var character = bots.doYouHaveSomethingToSay(data)
+    if (character) bot.postMessage('#sandpit', character.quip, character.params)
   }
 })
 
