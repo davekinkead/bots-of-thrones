@@ -1,6 +1,6 @@
 {
-  "name": "bot-of-thrones",
-  "version": "0.0.1",
+  "name": "bots-of-thrones",
+  "version": "0.0.2",
   "description": "Winter is coming...",
   "main": "index.js",
   "scripts": {
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/davekinkead/bot-of-thrones.git"
+    "url": "git+ssh://git@github.com/davekinkead/bots-of-thrones.git"
   },
   "keywords": [
     "Game of Thrones",
@@ -19,9 +19,9 @@
   "author": "Dave Kinkead",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/davekinkead/bot-of-thrones/issues"
+    "url": "https://github.com/davekinkead/bots-of-thrones/issues"
   },
-  "homepage": "https://github.com/davekinkead/bot-of-thrones#readme",
+  "homepage": "https://github.com/davekinkead/bots-of-thrones#readme",
   "dependencies": {
     "express": "^4.13.4",
     "slackbots": "^0.5.1"
