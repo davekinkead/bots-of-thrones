@@ -25,5 +25,8 @@
   "dependencies": {
     "express": "^4.13.4",
     "slackbots": "^0.5.1"
+  },
+  "devDependencies": {
+    "tap": "^5.7.1"
   }
 }

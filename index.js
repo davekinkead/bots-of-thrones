@@ -19,8 +19,6 @@ bot.on('start', function() {
 })
 
 bot.on('message', function(data) {
-  console.log(data);
-
   if (data.type === 'message' && data.subtype !== 'bot_message') {
     var character = bots.doYouHaveSomethingToSay(data)
     if (character) bot.postMessage('#sandpit', character.quip, character.params)
